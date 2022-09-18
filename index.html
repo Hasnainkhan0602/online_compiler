@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>PseudoCoders Online Compiler</title>
+</head>
+<body>
+    <center>
+        <img src="/pseudo_coders3.png" height="225px" width="400px">
+        <h1 class="light_text">Online Compiler</h1>
+        <form id="myform" name="myform" method="post" action="compilecode">
+            <div class="text">
+          <textarea rows="18" cols="80" id="code" name="code" placeholder="Enter Your Code Here!! "></textarea>
+          <textarea rows="18" cols="80" id="input" name="input" placeholder="Enter the Values Here!!"></textarea>
+        </div>
+          <br>
+          <div class="language">
+          <span>Language :</span>
+          <select name="lang" id="drop">
+            <option value="C">C</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+        <div class="choice">
+          <span>Compile With Input :</span>
+          <label for="inputRadio1">Yes</label>
+          <input type="radio" name="inputRadio" id="inputRadio1" value="true">
+          <label for="inputRadio1">No</label>
+          <input type="radio" name="inputRadio" id="inputRadio2" value="false">
+          <br>
+          <input type="submit" value="Execute" name="submit" id="submit">
+          <script> src="index.js" </script>
+          </div>
+        </form>
+      </center>
+</body>
+</html>
